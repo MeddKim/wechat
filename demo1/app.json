@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/register/register"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#000409",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#FFFFFF",
+    "backgroundTextStyle":"light"
+  },
+  "tabBar": {
+    "color":"#FFFFFF",
+    "backgroundColor":"#000409",
+    "borderStyle": "black",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "文章"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "留言" 
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "评论" 
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "热门"  
+    },{
+      "pagePath": "pages/register/register",
+      "text": "小游戏"  
+    }]
+  },
+  "debug":true
+}
