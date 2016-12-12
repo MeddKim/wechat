@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/views/views"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000409",
@@ -26,10 +27,10 @@
       "pagePath": "pages/logs/logs",
       "text": "评论" 
     },{
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/register/register",
       "text": "热门"  
     },{
-      "pagePath": "pages/register/register",
+      "pagePath": "pages/views/views",
       "text": "小游戏"  
     }]
   },
