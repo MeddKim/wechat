@@ -1,21 +1,38 @@
 Page({
+  data:{
+
+  },
   data: {
-    markers: [{
-      latitude: 23.099994,
-      longitude: 113.324520,
-      name: 'T.I.T 创意园',
-      desc: '我现在的位置'
-    }],
-    covers: [{
-      latitude: 23.099794,
-      longitude: 113.324520,
-      iconPath: '../images/car.png',
-      rotate: 10
-    }, {
-      latitude: 23.099298,
-      longitude: 113.324129,
-      iconPath: '../images/car.png',
-      rotate: 90
-    }]
-  }
+    point:{
+      x:1,
+      y:1
+    }
+  },
+  getData: function (event) {
+    console.log(event);
+    // wx.request({
+    //   url: 'test.php', //仅为示例，并非真实的接口地址
+    //   data: {
+    //     x: '',
+    //     y: ''
+    //   },
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   success: function (res) {
+    //     console.log(res.data)
+    //   }
+    // })
+  },
+  move:function(event){
+    let x = event.touches[0].clientX;
+    let y = event.touches[0].clientY;
+    var point = {"x":x,"y":y}
+    // console.log(point);
+    this.setData({
+      point:point
+    });
+
+    console.log(this.data.point);
+  }  
 })

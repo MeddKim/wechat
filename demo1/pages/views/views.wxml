@@ -1,1 +1,7 @@
-<map longitude="113.324520" latitude="23.099994" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 200px;"></map>
+<!--<view bindtouchmove = "move">
+  <button bindtap="getData"> 发起请求 </button>
+</view>-->
+
+<view class="circle" bindtouchmove = "move" style="margin-left:{{point.x}}px;margin-top:{{point.y}}px"> 
+<!--<view class="circle" bindtouchmove = "move" style="left:50px;top:50px"> -->
+</view>
